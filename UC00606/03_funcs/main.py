@@ -77,7 +77,7 @@ def e_par2(num:int) -> bool:
         return True
     else:
         return False
-    
+
 res = e_par(5)
 print(res)
 
