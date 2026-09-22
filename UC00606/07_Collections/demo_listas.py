@@ -1,6 +1,8 @@
 #          0        1        2
 from time import process_time_ns
 
+from mypyc import primitives
+
 nomes = ["João", "Carlos", "Rui"]
 
 print(nomes)
@@ -134,6 +136,23 @@ print(nomes[-30:40]) # evito isto
 print(nomes[5:40])
 print(nomes[5:40:5])
 
-#         start : end : step
+#       start : end : step
 print(nomes[-1:-20:-5])
+
+
+
+print("-------------------------")
 # listComp
+
+
+lst = []
+for nome in nomes:
+    if "q" in nome:
+        lst.append(len(nome))
+
+print(lst)
+
+# newlist = [expression for item in iterable if condition == True]
+lst2 = [len(nome) for nome in nomes if "q" in nome]
+
+print(lst2)
