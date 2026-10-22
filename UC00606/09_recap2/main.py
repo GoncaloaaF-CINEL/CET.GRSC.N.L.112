@@ -56,6 +56,23 @@ def jogo(min_val:int = 0, max_val:int = 100):
 
 
 jogo(min_val = 0, max_val = 10)
+
+# Crie a app Guess the Number, deve usar funções
+    # gerar um num (target)
+    # pedir num ao usr
+    # ver se o input e valido
+    # verificar a resposta
+        # se num > target  -> informar que o target e menor
+        #    - Voltar a pedir o num
+        # se num < target  -> informar que o target e maior
+        #    - Voltar a pedir o num
+        # se num ==  target  -> informar esta correto
+
+
+
+
+
+
 # conte o número de tentativas
 # mostre o ranking dos 5 melhores jogadores
 
